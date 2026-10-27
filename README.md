@@ -1,5 +1,7 @@
 # Earbud-case LED display: pinout and segment map
 
+*Search terms: wireless earbud charging case battery display pinout, TWS earbud case LED display reverse engineering, charlieplexed 10-pin FPC display, HT01-10PIN-FPC-V00, YFTD4108SWAD-8.*
+
 A complete drive map for an unmarked 10-finger FPC LED display salvaged from a wireless earbud charging case: two 5-bar battery gauges, two 7-segment digits plus a "1" stub (0-199), a `%`, `L` and `R` glyphs, and two outline frames. **31 segments, all reachable, charlieplexed over 8 lines.** Includes a ready-to-use ESP32 driver and the probing tools used to find the map, so you can check it against your own copy or repeat the method on a different module.
 
 Markings: the ribbon reads `HT01-10PIN-FPC-V00` (zeros, judged by comparing the glyphs to the "10" on the same ribbon). The side of the panel is printed `YFTD4108SWAD-8 1931`; the `1931` may be a date code (unconfirmed). Which earbud case it came from is unknown, so those two strings are the best handles for finding a match. If yours has the same ribbon and the same face layout, this map should apply, but verify it before trusting it (see "Verifying" below).
